@@ -1,0 +1,22 @@
+<%-include('partials/header.ejs'); %>
+    <h1>
+        <%= message %>
+    </h1>
+
+    <h1>Esta es una lista de usuarios</h1>
+    <ul>
+        <% for(let i=0; i<users.length; i++){ %>
+            <li><%= users[i].name %></li>
+        <% } %>
+    </ul>
+
+    <h1>personajes</h1>
+
+    <% for(let i=0; i < pokemons.length; i++) { %>
+        <p class="titulo"><%= pokemons[i].name %></p>
+        <p><%= pokemons[i].url %></p>
+    <% } %>
+        
+
+
+<%-include('partials/footer.ejs'); %>

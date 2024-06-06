@@ -1,0 +1,3 @@
+morgan -> Sirve para mostrar mensajes en consola de las peticiones que vayan llegando
+
+app.use(morgan('dev'));
